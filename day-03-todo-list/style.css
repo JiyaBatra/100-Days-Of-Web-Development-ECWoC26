@@ -3,15 +3,25 @@
   font-family: Arial, sans-serif;
 }
 
+/* Theme variables */
+:root {
+  --bg-color: #f4f4f4;
+  --container-bg: #ffffff;
+  --text-color: #000000;
+  --btn-bg: #e0e0e0;
+  --btn-text: #000000;
+}
+
 body {
-  background: #f4f4f4;
+  background: var(--bg-color);
+  color: var(--text-color);
   padding: 40px;
 }
 
 .container {
   max-width: 400px;
   margin: auto;
-  background: white;
+  background: var(--container-bg);
   padding: 20px;
   border-radius: 6px;
 }
@@ -33,6 +43,9 @@ input {
 button {
   padding: 8px 12px;
   cursor: pointer;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
 }
 
 ul {
@@ -59,4 +72,13 @@ li {
 
 .actions button {
   margin-left: 5px;
+}
+
+/* Dark mode */
+body.dark {
+  --bg-color: #121212;
+  --container-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --btn-bg: #333333;
+  --btn-text: #ffffff;
 }
