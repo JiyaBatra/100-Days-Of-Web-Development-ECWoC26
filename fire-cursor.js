@@ -1,12 +1,21 @@
- // 4. Select the cursor element
-  const cursor = document.querySelector('.cursor');
+const cursor = document.querySelector('.cursor');
 
-  // 5. Listen to mouse movement
-  document.addEventListener('mousemove', (event) => {
-    const mouseX = event.pageX; // x-coordinate
-    const mouseY = event.pageY; // y-coordinate
+let lastX = 0;
+let lastY = 0;
 
-    // 6. Move the cursor div to mouse position
-    cursor.style.left = mouseX + 'px';
-    cursor.style.top = mouseY + 'px';
-  });
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+
+  const dx = e.clientX - lastX;
+  const dy = e.clientY - lastY;
+
+  if (dx !== 0 || dy !== 0) {
+    const angle = Math.atan2(dy, dx) * (180 / Math.PI);
+    cursor.style.transform =
+      `translate(-50%, -50%) rotate(${angle}deg)`;
+  }
+
+  lastX = e.clientX;
+  lastY = e.clientY;
+});
