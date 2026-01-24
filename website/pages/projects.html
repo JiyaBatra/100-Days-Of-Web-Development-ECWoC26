@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/website/assets/images/logo.png" />
+  <link rel="icon" href="/website/assets/images/logo.png" height="70px" width="100px"/>
   <title>Projects | 100 Days of Web Dev</title>
   <link rel="stylesheet" href="../styles/index.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -20,7 +20,26 @@
       margin: 0 auto 40px;
       position: relative;
     }
+ header nav img {
+            width: 100px;
+            height: 70px;
+            border: 2px groove #cc2a01;
+            border-radius: 25%;
 
+        }
+        header nav img:hover {
+            box-shadow: 0 0 15px #ff5733, 0 0 30px #ff5733, 0 0 45px #ff5733;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+               .nav-container{
+            height: 120px;
+            margin-top: 25px;
+        }  
+
+        .nav-links img:hover {
+            box-shadow: 0 0 15px #ff5733, 0 0 30px #ff5733, 0 0 45px #ff5733;
+            transition: box-shadow 0.3s ease-in-out;
+        }
     #projectSearch {
       background: var(--bg-surface);
       backdrop-filter: blur(12px);
@@ -69,7 +88,6 @@
 
     .tab-btn.active {
       background: var(--accent-core);
-      color: #000;
       border-color: var(--accent-core);
       font-weight: var(--weight-bold);
       box-shadow: 0 0 20px var(--accent-alpha);
@@ -347,11 +365,22 @@
         <img src="../assets/images/logo.png" alt="100 Days of Web Dev" class="brand-logo-img" />
       </a>
       <nav class="nav-links">
-        <a href="dashboard.html" class="nav-link">Dashboard</a>
-        <a href="projects.html" class="nav-link active">Projects</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contributors.html" class="nav-link">Contributors</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">
+          <img src="../assets/images/dashboard.png" alt="Dashboard">
+        </a>
+        <a href="projects.html" class="nav-link active">
+
+          <img src="../assets/images/project.png" alt="Projects">
+        </a>
+        <a href="about.html" class="nav-link">
+          <img src="../assets/images/about.png" alt="About">
+        </a>
+        <a href="contributors.html" class="nav-link">
+          <img src="../assets/images/contributor.png" alt="Contributors">
+        </a>
+        <a href="contact.html" class="nav-link">
+          <img src="../assets/images/contact.png" alt="Contact">
+        </a>
       </nav>
       <div class="nav-user">
         <button class="mobile-toggle" onclick="toggleMobileMenu()">
