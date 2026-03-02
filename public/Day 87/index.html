@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HarmonyStream - Music Streaming</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
         :root {
             --harmony-primary: #1db954;
@@ -35,6 +35,19 @@
 </head>
 
 <body>
+    <div class="dynamic-bg"></div>
+<div class="particles"></div>
+    <div class="dynamic-bg"></div>
+<div class="particles"></div>
+    <!-- Live Background -->
+<div class="live-bg">
+    <div class="bg-gradient"></div>
+    <div class="particles"></div>
+</div>
+<!-- Dynamic Music Background -->
+<div class="dynamic-bg">
+    <div class="bg-overlay"></div>
+</div>
     <!-- Sidebar Navigation -->
     <nav class="sidebar">
         <div class="logo">
@@ -62,7 +75,7 @@
             <div class="mini-album-art">
                 <img id="mini-album-art"
                     src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                    alt="Album Art">
+                    alt="Album Art" />
             </div>
             <div class="mini-track-info">
                 <h4 id="mini-track-title">Select a Song</h4>
@@ -75,13 +88,20 @@
     <main class="main-content">
         <!-- Header -->
         <header class="header">
-            <div class="search-bar">
+            <!-- <div class="search-bar">
                 <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search songs, artists, albums...">
+            </div> -->
+            <div class="search-bar">
+    <i class="fas fa-search"></i>
+    <input type="text" id="search-input" placeholder="Search songs, artists, albums...">
+</div>
+
                 <input type="text" placeholder="Search songs, artists, albums..." aria-label="Search for music">
             </div>
             <div class="user-profile">
                 <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                    alt="Profile">
+                    alt="Profile" />
                 <span>User</span>
             </div>
         </header>
@@ -170,7 +190,7 @@
             <div class="current-song-info">
                 <img id="current-album-art"
                     src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                    alt="Album Art">
+                    alt="Album Art" />
                 <div class="song-details">
                     <h4 id="current-song-title">Select a Song</h4>
                     <p id="current-song-artist">Artist</p>

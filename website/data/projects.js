@@ -133,7 +133,12 @@ export const allProjects = [
     {day: 247, title: "Train Booking Website", tech: ["React", "MongoDB"] }, { day: 250, title: "Hospital Data Management Website", tech: ["React","Typescript"] },
     { day: 251, title: "Browser Based Virtual Machine", tech: ["JS"] },
     { day: 254, title: "Subscription Tracker", tech: ["Next.js"] },
+    { day: 257, title: "Database Schema Designer", tech: ["React"] },
     { day: 264, title: "Realtime Brainstorming Tool", tech: ["Socket.io"] },
+    { day: 256, title: "Browser Based Docker UI", tech: ["Node.js"] },
+    { day: 259, title: "Thread Scheduling Simulator", tech: ["Next.js"] },
+    { day: 263, title: "Custom Shell in Browser", tech: ["Next.js"] },
 
+    { day: 264, title: "Github Clone", tech: ["React"] },
 
 ];

@@ -7,6 +7,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 
+
 // Mobile Menu Toggle (NovaFlow)
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
@@ -52,6 +53,8 @@ setInterval(() => {
   showSlide(index);
 }, 4000);
 
+
+
   if (slides[i]) slides[i].classList.add("active");
 }
 
@@ -90,8 +93,6 @@ window.addEventListener("scroll", () => {
 scrollBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
-
-
 
 
 const menuBtn = document.getElementById("menuBtn");
