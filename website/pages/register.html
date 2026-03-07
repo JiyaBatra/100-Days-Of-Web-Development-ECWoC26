@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Registration Form with Lamp Toggle</title>
 <!-- Design System -->
-  <link rel="stylesheet" href="../../website/styles/index.css" />
+  <link rel="stylesheet" href="website/styles/index.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,13 +15,13 @@
     rel="stylesheet" />
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="../../website/style.css">
-  <link rel="stylesheet" href="../../website/styles/tracker.css" />
-  <link rel="icon" type="image/png" href="../../website/assets/images/logo.png" />
+  <link rel="stylesheet" href="website/style.css">
+  <link rel="stylesheet" href="website/styles/tracker.css" />
+  <link rel="icon" type="image/png" href="website/assets/images/logo.png" />
 
   <!-- Navbar Loader -->
-  <script src="../../scripts/components/sidebar-loader.js"></script>
-  <script src="../../scripts/components/navbar-loader.js"></script>
+  <script src="scripts/components/sidebar-loader.js"></script>
+  <script src="scripts/components/navbar-loader.js"></script>
 
   <!-- PWA -->
   <link rel="manifest" href="/manifest.webmanifest" />
@@ -87,9 +87,9 @@
 <body>
  <div class="cursor-dot" id="cursorDot"></div>
   <div class="cursor-ring" id="cursorRing"></div>
- <script src="../../website/scripts/components/cursor.js"></script>
+ <script src="website/scripts/components/cursor.js"></script>
 <div class="lamp-container">
-  <img id="lamp" src="../../assets/lamp/lampoff.png" alt="Lamp Off" width="100">
+  <img id="lamp" src="assets/lamp/lampoff.png" alt="Lamp Off" width="100">
 </div>
 
 <form id="regForm">
@@ -109,10 +109,10 @@
   // Lamp toggle
   lamp.addEventListener('click', () => {
     if(isLampOn){
-      lamp.src = '../../assets/lamp/lampoff.png'; // Lamp off
+      lamp.src = 'assets/lamp/lampoff.png'; // Lamp off
       form.style.display = 'none';
     } else {
-      lamp.src = '../../assets/lamp/lampon.png'; // Lamp on
+      lamp.src = 'assets/lamp/lampon.png'; // Lamp on
       form.style.display = 'block';
     }
     isLampOn = !isLampOn;
